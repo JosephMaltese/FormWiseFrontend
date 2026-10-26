@@ -1,4 +1,4 @@
-import {APIExercise, Exercise, MusclesTrained} from "@/lib/types";
+import { Exercise, MusclesTrained} from "@/lib/types";
 
 const musclesFrontOnly = [
     "tibialis",
@@ -67,7 +67,7 @@ const appBackgroundColorHexDark = "#09090B" as const;
 
 const defaultBodyColorHex = "#989898" as const;
 
-const apiURL = "http://127.0.0.1:8000/analyze-video/";
+const apiBaseURL = "http://127.0.0.1:8000/api/v1";
 
 const COLORS = {
     background: "#F8F7F4",
@@ -90,7 +90,7 @@ export {
     progressChartLineColorHex,
     progressChartPointColorHex,
     supportedExercises,
-    apiURL,
+    apiBaseURL,
     exerciseEnumToDisplayName,
     exerciseMuscles,
     COLORS,
